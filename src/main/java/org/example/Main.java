@@ -18,6 +18,15 @@ public class Main {
            else
                System.out.print("connection is not stablished");
 
+//            3.create  statement object
+           String query ="insert into personps(id,name) values (10,'murli')";
+            Statement st=con.createStatement();
+
+//            4 query execution
+
+           st.execute(query);
+           System.out.println("data stored");
+           con.close();
        }
 
        catch(Exception e){
